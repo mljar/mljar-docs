@@ -1,6 +1,8 @@
 site_name: mljar-docs
 pages:
 - Home: index.md
+- Quick Start: usage.md
+- Data Formats: data.md
 theme: readthedocs
 site_url: https://www.mljar.com
 copyright: Copyright 2016 mljar
