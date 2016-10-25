@@ -2,7 +2,7 @@
 
 Building machine learning models should be easy! (you see too many steps below to start? come on, it is only like that at the beginning, go and do it! Trust me it is easy!)
 
-## Analysis steps 
+## Analysis steps
 
  1. Login and create a project.
  2. Go into a project by clicking on its title.
@@ -17,13 +17,25 @@ Building machine learning models should be easy! (you see too many steps below t
       * input dataset
       * learning algoritms
       * tuning parameters
- 
+
  11. `Save` experiment and click on it on the list. Check if its details looks like expected and click `Start experiment` after that all the machine learning magic will start!
  12. To review models go to `Results` from left menu. To check algorithm details click on it.
- 
- 
+
+
 ## Predict
 
+To get predictions from trained models you can download model in `Deploy` view or you can upload test dataset into MLJAR and use it for prediction. This situation is described below.
+
+ 1. Upload you data file in `Sources` view.
+ 2. Accept attributes usage in `Preview` for uploaded dataset.
+ 3. Go to `Predict` view, in top right corner select dataset which will be used for prediction.
+ 4. Select algorithm that will be used, by selecting checkbox.
+ 5. Press `Start Prediction` and wait a while. Click `Refresh` on the bottom of the page to see if prediction is computed.
+ 6. Your predictions will be displayed in the bottom of the page.
 
 ## Deploy
- 
+
+To deploy your model:
+
+ - you can download it from `Deploy` view - we are working on script that will allow you easy deploy models locally, so checkout our [github](https://github.com/mljar)
+ - or your model can be accessed by REST API (we are working on this feature !!!)
