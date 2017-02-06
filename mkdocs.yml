@@ -2,6 +2,7 @@ site_name: mljar-docs
 pages:
 - Home: index.md
 - Quick Start: usage.md
+- Python API: python.md
 - Data Formats: data.md
 theme: readthedocs
 site_url: https://www.mljar.com

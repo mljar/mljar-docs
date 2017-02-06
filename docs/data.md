@@ -10,4 +10,6 @@
 
 ## Image classification
 
+(This task is only available for selected users)
+
  1. For image classification input file should be a zip of two numpy arrays files: one file with X matrix and one with Y matrix. We are working on example of this.
