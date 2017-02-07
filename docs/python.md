@@ -33,11 +33,15 @@ export MLJAR_TOKEN=exampleexampleexample
 ```
  5. That's all, you are ready to use MLJAR in your python code!
 
+## Examples
+
+To see examples please go to [mljar-examples on github][1].
+
 ## API details
 
 The wrapper makes it easy to interact with MLJAR, so we try to make it intuitive to use. However, there are few arguments that can be set.
 
-For `Mljar` constructor:
+### `Mljar` constructor:
 
  - **project** - string with project title
  - **experiment** - string with experiment title
@@ -71,3 +75,16 @@ For `Mljar` constructor:
  - **create_enseble** boolean that decides if ensemble of all available will be created. The default is `True`.
  - **single_algorithm_time_limit** integer that sets how much time (in minutes) there will be spend for training single algorithm.
              The default value is 5 minutes.
+
+### `fit` method:
+
+ - **X** matrix with training attributes, it can be `pandas` or `numpy` type.
+ - **y** vector with target values, it can be `pandas` or `numpy` type.
+ - **wait_till_all_done** boolean which decides if fit function will wait
+                         till experiment is done, default is set to `False`.
+### `predict` method:
+
+ - **X** matrix which will be used for computing predictions, it can be `pandas` or `numpy` type.
+
+
+[1]: https://github.com/mljar/mljar-examples
