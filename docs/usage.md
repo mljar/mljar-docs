@@ -31,7 +31,7 @@ To get predictions from trained models you can download model in `Deploy` view o
  3. Go to `Predict` view, in top right corner select dataset which will be used for prediction.
  4. Select algorithm that will be used, by selecting checkbox.
  5. Press `Start Prediction` and wait a while. Click `Refresh` on the bottom of the page to see if prediction is computed.
- 6. Your predictions will be displayed in the bottom of the page.
+ 6. Your predictions will be displayed in the bottom of the page where you can download it.
 
 ## Deploy
 

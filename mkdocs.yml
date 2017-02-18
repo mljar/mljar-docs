@@ -2,8 +2,12 @@ site_name: mljar-docs
 pages:
 - Home: index.md
 - Quick Start: usage.md
+- Algorithms: algorithms.md
+- Tuning: tuning.md
+- Preprocessing: preprocessing.md
+- Predict: predict.md
 - Python API: python.md
 - Data Formats: data.md
 theme: readthedocs
 site_url: https://www.mljar.com
-copyright: Copyright 2016 mljar
+copyright: Copyright MLJAR, Inc. 2016 - 2017

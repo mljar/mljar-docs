@@ -72,7 +72,7 @@ The wrapper makes it easy to interact with MLJAR, so we try to make it intuitive
 
      The default is *Normal* mode.
 
- - **create_enseble** boolean that decides if ensemble of all available will be created. The default is `True`.
+ - **create_ensemble** boolean that decides if ensemble of all available will be created. The default is `True`.
  - **single_algorithm_time_limit** integer that sets how much time (in minutes) there will be spend for training single algorithm.
              The default value is 5 minutes.
 
