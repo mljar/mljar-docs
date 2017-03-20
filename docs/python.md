@@ -64,7 +64,20 @@ The wrapper makes it easy to interact with MLJAR, so we try to make it intuitive
 
      The default selection for regression is `[xgbr, lgbr]`.  
 
- - **validation** string which set a validation mode, valid strings are: `3fold`, `5fold`, `10fold`. This sets number of folds during cross validation. The default is `5fold`.
+ - **validation_kfolds** the number of folds to be used in validation,
+                       it is omitted if validation_train_split is not None
+                       or there is validation dataset provided.
+                       It can be number from 2 to 15.
+ - **validation_shuffle** the boolean which specify if shuffle samples before training.
+                       It is used in `k-fold CV` and in validation split. Default is set True.
+                       It is ignored when validating with separate dataset.
+ - **validation_stratify** the boolean which decides whether samples will be
+                       divided into folds with the same class distribution.
+                       In regression tasks this flag is ignored. Default is set to True.
+ - **validation_train_split** the ratio how to split training dataset into train and validation.
+                       This ratio specify what ratio from input data should be used in training.
+                       It should be from (0.05,0.95) range. If it is not None, then
+                       validation_kfolds variable is ignored.
  - **tuning_mode** string that sets how many models for each algorithm will be checked. Available modes:
     * *Normal* - there will be checked 5-10 models
     * *Sport* - there will be checked 10-15 models
@@ -80,6 +93,9 @@ The wrapper makes it easy to interact with MLJAR, so we try to make it intuitive
 
  - **X** matrix with training attributes, it can be `pandas` or `numpy` type.
  - **y** vector with target values, it can be `pandas` or `numpy` type.
+ - **validation_data** tuple (X,y) with validation data. If set to None, then
+                           the k-fold CV or train split validation will be used.
+                           Default is set to None.
  - **wait_till_all_done** boolean which decides if fit function will wait
                          till experiment is done, default is set to `False`.
 ### `predict` method:
